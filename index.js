@@ -94,7 +94,6 @@ app.delete("/all", (req, res) => {
     res .status(404).json({ error: `You are not authorised to perform this action.` });
   }
 });
-
 app.listen(port, () => {
   console.log(`Successfully started server on port ${port}.`);
 });
